@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs";
 import prisma from "~/lib/prisma";
 import validator from "validator";
+import jwt from "jsonwebtoken";
 
 export default defineEventHandler(async (event) => {
   try {
@@ -44,12 +45,18 @@ export default defineEventHandler(async (event) => {
     const hashedPassword = await bcrypt.hash(body.password, salt);
 
     // Create the new user
-    await prisma.user.create({
+    const user = await prisma.user.create({
       data: {
         email: body.email,
         password: hashedPassword,
         salt: salt,
       },
+    });
+
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET!);
+    setCookie(event, "VueNotesJWT", token, {
+      expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+      secure: process.env.NODE_ENV === "production",
     });
 
     return {
