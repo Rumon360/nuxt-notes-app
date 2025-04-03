@@ -17,4 +17,5 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  modules: ["@prisma/nuxt"],
 });

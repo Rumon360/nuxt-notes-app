@@ -3,10 +3,13 @@
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
+  --color-background: #18181b;
   --color-primary: #21d760;
   --color-primary-light: #48e37e;
+  --color-foreground: #fafafa;
+  --color-foreground-light: #9f9fa9;
 }
 
 body {
-  @apply font-roboto bg-zinc-900 text-zinc-50 antialiased;
+  @apply font-roboto bg-background text-foreground antialiased;
 }

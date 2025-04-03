@@ -3,7 +3,7 @@
     <!-- sidebar -->
     <Sidebar />
     <div class="w-full h-full flex justify-center items-center">
-      <p class="text-zinc-600 max-w-2xl mx-auto">
+      <p class="text-foreground-light max-w-2xl mx-auto">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia hic
         odit vel quos odio quidem perferendis, voluptatibus fuga corporis dolore
         sunt expedita ad consequuntur dignissimos sapiente! Vero corporis
@@ -22,10 +22,6 @@
         Tenetur blanditiis enim dolorem quia, repudiandae, sit veniam
         accusantium molestiae quos commodi tempora consectetur beatae cum eius
         repellat suscipit cumque fuga culpa eos, et voluptate modi omnis iusto.
-        Eveniet voluptate qui, facilis, nisi, nam alias voluptatibus est
-        asperiores cupiditate aspernatur autem. Vero nam fugiat, sint dolorum
-        dolores accusamus sit ducimus iusto libero praesentium culpa rerum
-        quaerat. Sit pariatur rem obcaecati?
       </p>
     </div>
   </div>
