@@ -21,7 +21,7 @@
             name="email"
             type="email"
             placeholder="you@example.com"
-            class="border border-zinc-600 rounded-md w-full px-2 py-1 text-sm"
+            class="input"
           />
         </div>
         <div class="space-y-1">
@@ -30,7 +30,7 @@
             name="password"
             type="password"
             placeholder="*********"
-            class="border border-zinc-600 rounded-md w-full px-2 py-1 text-sm"
+            class="input"
           />
         </div>
       </div>

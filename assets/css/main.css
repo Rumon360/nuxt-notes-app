@@ -8,8 +8,13 @@
   --color-primary-light: #48e37e;
   --color-foreground: #fafafa;
   --color-foreground-light: #9f9fa9;
+  --color-error: #d72121;
 }
 
 body {
   @apply font-roboto bg-background text-foreground antialiased;
+}
+
+.input {
+  @apply border border-zinc-600 focus:outline-none rounded-md w-full px-2 py-1.5 text-sm;
 }
